@@ -73,7 +73,7 @@ const EmailController = {
       if (error) {
             res.end(
               JSON.stringify({
-                status: "ok",
+                status: "not okay ",
                 message: error,
               })
             );
