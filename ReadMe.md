@@ -29,6 +29,7 @@ heroku main
  git init
  git add .
  heroku create ebigwin
+ git commit -am "Remove yarn lock file"
  git push heroku main
 
 your port must be dynamic e.g  const PORT = process.env.PORT || 80;
