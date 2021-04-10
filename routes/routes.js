@@ -7,9 +7,9 @@ const routes = {
     '/email/sendEmail': function(req, res) {
         EmailController.sendEmail(req, res);
     } ,
-    '/email/sendAppliancedEmail': function(req, res) {
-        EmailController.sendApplianceEmail(req, res);
-    } ,
+    // '/email/sendAppliancedEmail': function(req, res) {
+    //     EmailController.sendApplianceEmail(req, res);
+    // } ,
   
 }
 
