@@ -66,7 +66,7 @@ const EmailController = {
       from: 'danishalikhan688@gmail.com',
       to: req.body.email,
       subject: req.body.subject,
-      text: req.body.template
+      html: req.body.template
     };
     
     transporter.sendMail(mailOptions, function(error, info){
