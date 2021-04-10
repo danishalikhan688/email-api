@@ -4,7 +4,8 @@ const nodemailer = require("nodemailer");
 const { urlencoded } = require("body-parser");
 const EmailController = {
 
-  sendEmail: (req, res) => {    
+  sendEmail: (req, res) => {  
+    console.log("this is here in send email ")  
         res.end(
           JSON.stringify({
             status: "ok",
@@ -51,9 +52,7 @@ const EmailController = {
   //   });
   // },
   
-  sendApplianceEmail: (req, res) => {
-    // console.log(JSON.stringify(res))
-    // console.log(JSON.stringify(req))
+  sendApplianceEmail: (req, res) => { 
     res.writeHead(200, { "Content-Type": "application/json" });   
     var transporter = nodemailer.createTransport({
       service: 'gmail',
