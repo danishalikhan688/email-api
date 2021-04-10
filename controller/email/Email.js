@@ -53,7 +53,7 @@ const EmailController = {
   // },
   
   sendApplianceEmail: (req, res) => { 
-    res.writeHead(200, { "Content-Type": "application/json" });   
+    // res.writeHead(200, { "Content-Type": "application/json" });   
     var transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
