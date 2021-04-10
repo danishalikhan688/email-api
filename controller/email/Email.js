@@ -58,7 +58,7 @@ const EmailController = {
       service: 'gmail',
       auth: {
         user: 'danishalikhan688@gmail.com',
-        pass: 'Danish@12345'
+        pass: 'toargrqdrkjuxkmt'
       }
     });
     
