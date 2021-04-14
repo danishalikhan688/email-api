@@ -1,8 +1,7 @@
-var express = require("express");
-const ApplianceController = require("../controller/appliance/Appliance");
+var express = require("express"); 
 var router = express.Router(); 
 const EmailController = require("../controller/email/Email"); 
-
+const ApplianceController = require("../controller/appliance/Appliance");
 const routes = { 
  
     '/email/sendEmail': function(req, res) {
