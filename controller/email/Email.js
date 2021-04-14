@@ -14,7 +14,26 @@ const EmailController = {
         ); 
   }, 
      
-    
+    getBrands: (req, res) => {  
+      var config = {
+        method: 'get',
+        url: 'https://admin.polartechappliance.ca/wp-json/wp/v2/brands',
+        headers: { 
+          'Authorization': 'Basic YWRtaW5vbGVnOmFkbWlub2xlZyFAIw==', 
+          'Content-Type': 'text/plain'
+        },
+        data : {}
+      };
+      axios(config) 
+      .then(function (response) {
+        console.log(JSON.stringify(response.data))
+        res.send(response)
+      })
+      .catch(function (error) {
+        console.log(JSON.stringify(error))
+        res.status(response.status).send(error)
+      });
+    },
 
   sendApplianceEmail: (req, res) => { 
     res.writeHead(200, { "Content-Type": "application/json" });   
