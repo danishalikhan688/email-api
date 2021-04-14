@@ -1,4 +1,5 @@
 var express = require("express");
+const ApplianceController = require("../controller/appliance/Appliance");
 var router = express.Router(); 
 const EmailController = require("../controller/email/Email"); 
 
@@ -10,7 +11,22 @@ const routes = {
     '/email/sendAppliancedEmail': function(req, res) {
         EmailController.sendApplianceEmail(req, res);
     } ,
-  
+
+    // Appliance point
+    '/appliance/brands': function(req, res) {
+        ApplianceController.getBrands(req, res);
+    } ,
+    '/appliance/issues': function(req, res) {
+        ApplianceController.getIssues(req, res);
+    } ,
+    '/appliance/appliance': function(req, res) {
+        ApplianceController.getAppliance(req, res);
+    } ,
+    '/appliance/pages': function(req, res) {
+        ApplianceController.getPages(req, res);
+    } ,
+    
+    
 }
 
 router.use("/", function(req, res) {
