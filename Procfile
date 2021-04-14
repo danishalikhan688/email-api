@@ -1,1 +1,1 @@
-web: npm install && npm run prebuild &&  node index.js 
+web : npm install &&  node index.js 
