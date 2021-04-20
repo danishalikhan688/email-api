@@ -36,19 +36,16 @@ const EmailController = {
     },
 
   sendApplianceEmail: (req, res) => { 
-    res.writeHead(200, { "Content-Type": "application/json" });    
-    var transport = nodemailer.createTransport({
-      host: "giowm1236.siteground.biz",
-      port: 995 ,
-      secure: false, // true for 465, false for other ports
+    res.writeHead(200, { "Content-Type": "application/json" });   
+    var transporter = nodemailer.createTransport({
+      service: 'gmail',
       auth: {
-        user: "info@polartechappliance.ca", // generated ethereal user
-        pass: "23@dJnf32J>e", // generated ethereal password
-      },
-    });
-
+        user: 'danishalikhan688@gmail.com',
+        pass: 'toargrqdrkjuxkmt'
+      }
+    }); 
     var mailOptions = {
-      from: ' info@polartechappliance.ca',
+      from: 'danishalikhan688@gmail.com',
       to: req.body.email,
       subject: req.body.subject,
       html: req.body.template
@@ -80,6 +77,12 @@ const EmailController = {
 module.exports = EmailController;
 
 
-
-
-
+// var transport = nodemailer.createTransport({
+//   host: "giowm1236.siteground.biz",
+//   port: 995 ,
+//   secure: false, // true for 465, false for other ports
+//   auth: {
+//     user: "info@polartechappliance.ca", // generated ethereal user
+//     pass: "23@dJnf32J>e", // generated ethereal password
+//   },
+// });
