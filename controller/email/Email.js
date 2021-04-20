@@ -39,8 +39,8 @@ const EmailController = {
     res.writeHead(200, { "Content-Type": "application/json" });    
     var transport = nodemailer.createTransport({
       host: "giowm1236.siteground.biz",
-      port: 465 ,
-      secure: true, // true for 465, false for other ports
+      port: 995 ,
+      secure: false, // true for 465, false for other ports
       auth: {
         user: "info@polartechappliance.ca", // generated ethereal user
         pass: "23@dJnf32J>e", // generated ethereal password
