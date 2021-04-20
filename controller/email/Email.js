@@ -76,7 +76,6 @@ const EmailController = {
 }
 module.exports = EmailController;
 
-
 // var transport = nodemailer.createTransport({
 //   host: "giowm1236.siteground.biz",
 //   port: 995 ,
