@@ -38,14 +38,14 @@ const EmailController = {
   sendApplianceEmail: (req, res) => { 
     res.writeHead(200, { "Content-Type": "application/json" });   
     var transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: 'giowm1236.siteground.biz',
       auth: {
-        user: 'danishalikhan688@gmail.com',
-        pass: 'toargrqdrkjuxkmt'
+        user: ' info@polartechappliance.ca',
+        pass: '23@dJnf32J>e'
       }
     }); 
     var mailOptions = {
-      from: 'danishalikhan688@gmail.com',
+      from: ' info@polartechappliance.ca',
       to: req.body.email,
       subject: req.body.subject,
       html: req.body.template

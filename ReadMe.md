@@ -38,3 +38,7 @@ your port must be dynamic e.g  const PORT = process.env.PORT || 80;
  rm yarn.lock
  git commit -am "Remove yarn lock file"
  git push heroku main
+
+
+ if through error can not find controller or file than clear catch 
+ heroku config:set NODE_MODULES_CACHE=false
