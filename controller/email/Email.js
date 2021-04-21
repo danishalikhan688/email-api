@@ -47,7 +47,7 @@ const EmailController = {
       },
     });
     var mailOptions = {
-      from: 'info@polartechappliance.c',
+      from: 'info@polartechappliance.ca',
       to: req.body.email,
       subject: req.body.subject,
       html: req.body.template
