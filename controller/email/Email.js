@@ -53,7 +53,7 @@ const EmailController = {
       html: req.body.template
     };
     
-    transporter.sendMail(mailOptions, function(error, info){
+    transport.sendMail(mailOptions, function(error, info){
       if (error) {
             res.end(
               JSON.stringify({
